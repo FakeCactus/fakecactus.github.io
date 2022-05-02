@@ -1,1 +1,6 @@
-
+#headerFont {
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+word-spacing: 3px;
+color: #FAA61A;
+font-weight: 700;
+}
