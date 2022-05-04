@@ -14,14 +14,24 @@
       </p>
     </center>
   </header>
-  <p>
-    Clicks: <a id="clicks">0</a>
-  </p>
+  <button onclick="darkThemeSwitch()">
+    Toggle dark mode
+  </button>
+  <script>
+    function darkThemeSwitch() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+  }
+  </script>
   <div>
     <style>
       body {
         background: rgb(255,255,255);
         background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(180,183,188,1) 100%);
+      }
+      .dark-mode {
+        background: rgb(63,63,73);
+        background: radial-gradient(circle, rgba(63,63,73,1) 0%, rgba(37,38,47,1) 100%);
       }
     </style>
   </div>
